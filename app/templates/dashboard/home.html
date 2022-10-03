@@ -1,0 +1,14 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+    {% if request.user.is_authenticated %}
+        <h1>Bem vindo</h1>    
+        <h1>Painel do Usuário</h1>
+        
+    {% else %}
+        <h1>Você não tem acesso a essa área!</h1>
+
+    {% endif %}
+    
+{% endblock %}
